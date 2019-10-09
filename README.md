@@ -5,25 +5,25 @@ This script is intended for use with the Adafruit Stemma I2C Soil moisture and t
 
 ### How To Use:
 
-#### 0) Use python3
+### 0) Use python3
 This is NOT a python 2 compatable project - preferably use 3.7
-#### 1) Wire your stemma accroding to [Adafruit's guide](https://learn.adafruit.com/adafruit-stemma-soil-sensor-i2c-capacitive-moisture-sensor/python-circuitpython-test#step-3016121). 
+### 1) Wire your stemma accroding to [Adafruit's guide](https://learn.adafruit.com/adafruit-stemma-soil-sensor-i2c-capacitive-moisture-sensor/python-circuitpython-test#step-3016121). 
 
-#### 2) On your Raspberry pi this repo with the following command:
+### 2) On your Raspberry pi this repo with the following command:
 ```sh
 git clone https://github.com/librarysteve/stemma_blynk
 ```
 
-#### 3) Install the required packages with pip
+### 3) Install the required packages with pip
 ```sh 
 pip install -r requirements.txt
 ```
-#### 4) Add your Blynk authorization token to main.py
+### 4) Add your Blynk authorization token to main.py
 After logging in and creating a project, the authorizatiuon token 
 can be found under the project settings (the bolt icon in the top right).
 Touch the "Email" button to email it to yourself. (Copy and paste for accuracy!)
 
-#### 5) Add widgets to your project and configure
+### 5) Add widgets to your project and configure
 The Following widget configurations are most effective:
   a. Two Value Displays
   b. Two Labeled Value Displays
@@ -54,7 +54,7 @@ Configureation for Value Displauy(with or without a label) is the same.
   e. Set the Temp pin to "Virtual:V0" with and the moisture pin to "Virtual:V1"
   (You'll have to adjust the scaling settings accordingly!)
   
-#### 6) Start it up!
+### 6) Start it up!
 Run the script on the pi with:
 ```sh
 python3 ./main.py
