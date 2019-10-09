@@ -11,9 +11,40 @@ This script is intended for use with the Adafruit Stemma I2C Soil moisture and t
 
 ### How To Use:
 
-### 0) Use python3
-This is NOT a python 2 compatable project - preferably use 3.7
+### 0) Before you start!
+Asside from the python modules - you also need to enable i2c.
+Run:
+```sh
+sudo raspi-config
+```
+And select "Interfacing Options > I2C > YES"
+
+You need python3 and some debugging tools will be useful
+Run:
+```sh
+sudo apt install python3 python3-pip i2c-tools -y
+```
+*You should reboot before moving on*
+
+
 ### 1) Wire your stemma accroding to [Adafruit's guide](https://learn.adafruit.com/adafruit-stemma-soil-sensor-i2c-capacitive-moisture-sensor/python-circuitpython-test#step-3016121). 
+Use the following command to check your wiring:
+```sh
+i2cdetect -y 1
+```
+You should see the following output:
+```sh
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- 36 -- -- -- -- -- -- -- -- --
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+```
+If you don't see the 36(the default i2c address), check your wiring!
 
 ### 2) On your Raspberry pi this repo with the following command:
 ```sh
