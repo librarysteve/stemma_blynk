@@ -3,6 +3,9 @@ Reading data from the Adafruit STEMMA with Blynk on the Raspbery Pi
 
 This script is intended for use with the Adafruit Stemma I2C Soil moisture and temperature sensor and the Blynk IoT server/app for Android and iOS. It uses Adafruit's Circuitpython project and the blynk library
 
+## [Adafruit](https://www.adafruit.com/)
+## [Blynk](https://blynk.io/)
+
 ### How To Use:
 
 ### 0) Use python3
