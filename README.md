@@ -31,7 +31,8 @@ The Following widget configurations are most effective:
   
 Configureation for Value Displauy(with or without a label) is the same.
 
-##### Value Display/Labeled Value Display:
+#### Value Display/Labeled Value Display:
+  
   a. Add two widgets to the workspace
   
   b. To enter the settings menu, touch the widget while the app isn't running
@@ -44,7 +45,8 @@ Configureation for Value Displauy(with or without a label) is the same.
      set the range to 0-2000
 (If you choose the labeled display simply edit the label section accordingly)
 
-##### For SuperChart:
+#### For SuperChart:
+  
   a. Add the SuperChart widget
   b. Enter the settings menu
   c. By default there is one data stream. Name it "Temperature"
